@@ -19,7 +19,7 @@ const addproblem=async (req,res)=>{
     
     const user=await User.findOne({username});
     
-    user.problems.push(problem._id);
+    user.problems.unshift(problem._id);
     
     await user.save();
     res.json({
