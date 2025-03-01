@@ -1,0 +1,73 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+function Login({ setlogin }) {
+  const navigate = useNavigate();
+  const [username, setusername] = useState("");
+  const [password, setpassword] = useState("");
+  const [msg, setmsg] = useState("");
+
+  async function clickHandler() {
+    console.log("SERVER_URL:", SERVER_URL);
+    const url = `${SERVER_URL}/api/auth/login`;
+
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        password,
+      })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      // Store the JWT token in localStorage
+      localStorage.setItem('authToken', data.token);
+      setlogin(true);
+      toast.success('Login successful');
+      navigate('/');
+    } else {
+      setmsg(data.msg);
+      toast.error(data.msg);
+    }
+  }
+
+  return (
+    <div className="w-full h-screen flex justify-center items-center bg-gray-100">
+      <div className="flex flex-col w-full sm:w-2/3 md:w-1/2 lg:w-1/3 bg-white shadow-lg p-6 sm:p-10 rounded-lg">
+        <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6">Login</h1>
+
+        <input
+          type="text"
+          placeholder="Enter your username"
+          className="border-2 p-2 rounded-md focus:ring-2 focus:ring-blue-500"
+          onChange={(e) => setusername(e.target.value.trim())}
+        />
+
+        <input
+          type="password"
+          placeholder="Enter your password"
+          className="border-2 p-2 rounded-md focus:ring-2 focus:ring-blue-500 mt-4"
+          onChange={(e) => setpassword(e.target.value.trim())}
+        />
+
+        <button
+          className="bg-black text-white py-2 px-4 rounded-md mt-6 hover:bg-gray-900 transition"
+          onClick={clickHandler}
+        >
+          Login
+        </button>
+
+        {msg && <p className="text-center text-red-500 mt-4">{msg}</p>}
+      </div>
+    </div>
+  );
+}
+
+export default Login;
