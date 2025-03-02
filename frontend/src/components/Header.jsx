@@ -18,7 +18,7 @@ function Header({ islogin, setlogin }) {
 
     try {
       const res = await fetch(url, {
-        method: 'POST',
+  
         headers: {
           'Authorization': `Bearer ${token}` // Attach token in Authorization header
         }
