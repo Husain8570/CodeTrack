@@ -75,20 +75,20 @@ const signup = async (req, res) => {
         }
 
         const hashedPassword = await bcrypt.hash(password, 10);
-        const newUser = await User.create({
+        await User.create({
             username,
             email,
             password: hashedPassword,
         });
 
-        const token = jwt.sign({ id: newUser._id, username }, process.env.JWT_SECRET, {
-            expiresIn: "1d",
+        const token = jwt.sign({ username }, jwt_secret, {
+            expiresIn: '1d'
         });
 
         return res.status(201).json({
             success: true,
             msg: "Signup successful",
-            token,
+            token // 🔹 Sending token in response instead of setting a cookie
         });
 
     } catch (error) {
