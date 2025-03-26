@@ -44,21 +44,21 @@ function Header({ islogin, setlogin }) {
       </div>
       <div className='flex gap-2 items-center'>
         {!islogin && (
-          <button className='bg-red-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-red-400' onClick={() => navigate('/signup')}>
+          <button className='bg-red-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-red-600' onClick={() => navigate('/signup')}>
             Sign up
           </button>
         )}
         {islogin ? (
-          <button className='bg-blue-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-blue-400' onClick={logoutHandler}>
+          <button className='bg-blue-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-blue-600' onClick={logoutHandler}>
             Logout
           </button>
         ) : (
-          <button className='bg-blue-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-blue-400' onClick={() => navigate('/login')}>
+          <button className='bg-blue-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-blue-600' onClick={() => navigate('/login')}>
             Login
           </button>
         )}
         {islogin && (
-          <button className='bg-red-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-red-400' onClick={() => navigate('/user')}>
+          <button className='bg-red-500 px-4 py-1 rounded-md text-xl cursor-pointer hover:bg-red-600' onClick={() => navigate('/user')}>
             Progress
           </button>
         )}
