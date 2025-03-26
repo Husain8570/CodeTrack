@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { ClipLoader } from 'react-spinners';
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
@@ -10,8 +11,10 @@ function Signup({ setlogin }) {
   const [password, setpassword] = useState("");
   const [username, setusername] = useState("");
   const [msg, setmsg] = useState("");
+  const [loading, setLoading] = useState(false);
 
   async function clickHandler() {
+    setLoading(true);
     const url = `${SERVER_URL}/api/auth/signup`;
 
     const res = await fetch(url, {
@@ -27,9 +30,9 @@ function Signup({ setlogin }) {
     });
 
     const data = await res.json();
+    setLoading(false);
 
     if (data.success) {
-      // Store JWT token in localStorage
       localStorage.setItem("authToken", data.token);
       setlogin(true);
       toast.success("Signup successful");
@@ -62,15 +65,16 @@ function Signup({ setlogin }) {
         <input 
           type="password" 
           placeholder="Enter your password" 
-          className="border-2 p-2 rounded-md focus:ring-2 focus:ring-blue-500  mt-4" 
+          className="border-2 p-2 rounded-md focus:ring-2 focus:ring-blue-500 mt-4" 
           onChange={(e) => setpassword(e.target.value.trim())} 
         />
 
         <button 
-          className="bg-black text-white py-2 px-4 rounded-md mt-6 hover:bg-gray-900 transition" 
-          onClick={clickHandler}
+          className="bg-black text-white py-2 px-4 rounded-md mt-6 hover:bg-gray-900 transition flex justify-center items-center" 
+          onClick={clickHandler} 
+          disabled={loading}
         >
-          Signup
+          {loading ? <ClipLoader size={20} color={"#fff"} /> : "Signup"}
         </button>
 
         {msg && <p className="text-center text-red-500 mt-4">{msg}</p>}
