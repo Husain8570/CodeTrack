@@ -12,7 +12,7 @@ function Signup({ setlogin }) {
   const [msg, setmsg] = useState("");
 
   async function clickHandler() {
-    const url = ${SERVER_URL}/api/auth/signup;
+    const url = `${SERVER_URL}/api/auth/signup`;
 
     const res = await fetch(url, {
       method: "POST",
