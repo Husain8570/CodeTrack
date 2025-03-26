@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import { ClipLoader } from 'react-spinners';
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+
 function Login({ setlogin }) {
   const navigate = useNavigate();
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
   const [msg, setmsg] = useState("");
+  const [loading, setLoading] = useState(false);
 
   async function clickHandler() {
+    setLoading(true);
     console.log("SERVER_URL:", SERVER_URL);
     const url = `${SERVER_URL}/api/auth/login`;
 
@@ -25,9 +29,9 @@ function Login({ setlogin }) {
     });
 
     const data = await res.json();
+    setLoading(false);
 
     if (data.success) {
-      // Store the JWT token in localStorage
       localStorage.setItem('authToken', data.token);
       setlogin(true);
       toast.success('Login successful');
@@ -58,10 +62,11 @@ function Login({ setlogin }) {
         />
 
         <button
-          className="bg-black text-white py-2 px-4 rounded-md mt-6 hover:bg-gray-900 transition"
+          className="bg-black text-white py-2 px-4 rounded-md mt-6 hover:bg-gray-900 transition flex justify-center items-center"
           onClick={clickHandler}
+          disabled={loading}
         >
-          Login
+          {loading ? <ClipLoader size={20} color={"#fff"} /> : "Login"}
         </button>
 
         {msg && <p className="text-center text-red-500 mt-4">{msg}</p>}
