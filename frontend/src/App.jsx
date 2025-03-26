@@ -48,7 +48,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/profile/:handle' element={<Profile />} />
         <Route path='/compare' element={<Compare />} />
-        <Route path='/signup' element={<Signup />} />
+        <Route path='/signup' element={<Signup setlogin={setlogin} />} />
         <Route path='/login' element={<Login setlogin={setlogin} />} />
         <Route path='/problemGraph/:handle' element={<Problem />} />
         <Route path='/problemtracker' element={<ProblemTracker />} />
