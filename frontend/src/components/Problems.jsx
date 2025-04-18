@@ -46,7 +46,7 @@ function Problems({ refresh, setRefresh }) {
   }, [refresh]); // Re-fetch when refresh state changes
 
   return (
-    <div className="text-white flex flex-col gap-4 p-4 w-full md:w-1/2 items-center max-h-[80vh]  bg-gray-800 rounded-lg">
+    <div className="text-white flex flex-col gap-4 p-4 w-full md:w-1/2 items-center max-h-[80vh] overflow-y-auto bg-gray-800 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Problems</h2>
       <SearchBar onSearch={searchHandler} />
       {problems.length > 0 ? (
@@ -58,6 +58,10 @@ function Problems({ refresh, setRefresh }) {
             time={problem.time} 
             topic={problem.topic} 
             id={problem._id}
+            expectedTime={problem.estimatedTime}
+            difficulty={problem.predictedDifficulty}
+
+
             setRefresh={setRefresh}
             refresh={refresh}
           />
