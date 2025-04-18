@@ -4,18 +4,18 @@ import { CgNotes } from "react-icons/cg";
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
-const ProblemCard = ({ title, url, time, topic, notes, id, setRefresh, refresh }) => {
+const ProblemCard = ({ title, url, time, topic, notes, id, setRefresh, refresh, expectedTime, difficulty }) => {
   const [showNotes, setShowNotes] = useState(false);
 
   async function deleteHandler() {
     const deleteUrl = `${SERVER_URL}/api/problems/delete/${id}`;
-    const token = localStorage.getItem("authToken"); // Get token from localStorage
+    const token = localStorage.getItem("authToken");
 
     try {
       const res = await fetch(deleteUrl, {
         method: 'DELETE',
         headers: {
-          'Authorization': `Bearer ${token}` // Attach token in Authorization header
+          'Authorization': `Bearer ${token}`
         }
       });
 
@@ -33,8 +33,31 @@ const ProblemCard = ({ title, url, time, topic, notes, id, setRefresh, refresh }
   return (
     <div className="bg-gray-700 text-white p-4 w-full rounded-lg shadow-md transition-transform transform hover:shadow-lg">
       <h3 className="text-2xl uppercase font-semibold text-center">{title}</h3>
-      <p className="text-xl">Topic: <span className="font-medium">{topic}</span></p>
-      <p className="text-xl">Time: <span className="font-medium">{time} min</span></p>
+      <div className="space-y-1 mt-2 text-xl">
+  <div className="flex justify-between">
+    <span className="font-medium">Topic:</span>
+    <span>{topic}</span>
+  </div>
+  <div className="flex justify-between">
+    <span className="font-medium">Time Taken:</span>
+    <span>{time} min</span>
+  </div>
+  {difficulty && (
+    <div className="flex justify-between">
+      <span className="font-medium">Estimated Difficulty:</span>
+      <span className="capitalize">{difficulty}</span>
+    </div>
+  )}
+  {expectedTime && (
+    <div className="flex justify-between">
+      <span className="font-medium">Expected solve time:</span>
+      <span>{expectedTime} min</span>
+    </div>
+  )}
+</div>
+
+
+
       <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-2 block font-medium">
         Solve Problem →
       </a>
