@@ -1,7 +1,73 @@
 import React, { useState } from 'react';
+import Select from 'react-select';
 import { ToastContainer, toast } from 'react-toastify';
+import { PulseLoader } from 'react-spinners'; // Import the spinner
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+
+const topicOptions = [
+  "Arrays",
+  "Linked List",
+  "Stacks",
+  "Queues",
+  "Trees",
+  "Graphs",             // Keep here only
+  "Dynamic Programming", // Keep here only
+  "Sorting",
+  "Searching",
+  "Bit Manipulation",
+  "Math",
+  "Backtracking",
+  "Trie",
+  "Segment Tree"
+];
+
+const tagOptions = [
+  { value: 'binary-search', label: 'Binary Search' },
+  { value: 'greedy', label: 'Greedy' },
+  { value: 'dfs-traversal', label: 'DFS Traversal' },
+  { value: 'bfs-traversal', label: 'BFS Traversal' },
+  { value: 'recursion', label: 'Recursion' },
+  { value: 'sliding-window', label: 'Sliding Window' },
+  { value: 'two-pointer', label: 'Two Pointer' },
+  { value: 'heap', label: 'Heap / Priority Queue' },
+  { value: 'prefix-sum', label: 'Prefix Sum' },
+  { value: 'union-find', label: 'Union Find / DSU' },
+  { value: 'topological-sort', label: 'Topological Sort' }
+];
+
+
+const customSelectStyles = {
+  control: (base) => ({
+    ...base,
+    backgroundColor: '#374151', // Tailwind's gray-700
+    borderColor: '#4B5563', // gray-600
+    color: 'white',
+  }),
+  menu: (base) => ({
+    ...base,
+    backgroundColor: '#1F2937', // gray-800
+    color: 'white',
+  }),
+  multiValue: (base) => ({
+    ...base,
+    backgroundColor: '#3B82F6', // blue-500
+    color: 'white',
+  }),
+  multiValueLabel: (base) => ({
+    ...base,
+    color: 'white',
+  }),
+  option: (base, state) => ({
+    ...base,
+    backgroundColor: state.isFocused ? '#2563EB' : '#1F2937',
+    color: 'white',
+  }),
+  input: (base) => ({
+    ...base,
+    color: 'white',
+  }),
+};
 
 const Form = ({ onProblemAdded }) => {
   const [formData, setFormData] = useState({
@@ -10,29 +76,39 @@ const Form = ({ onProblemAdded }) => {
     time: '',
     topic: '',
     notes: '',
+    tags: [],
   });
+
+  const [loading, setLoading] = useState(false); // State to track loading
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleTagsChange = (selectedOptions) => {
+    const tagValues = selectedOptions.map(option => option.value);
+    setFormData({ ...formData, tags: tagValues });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const url = `${SERVER_URL}/api/problems/add`;
-    const token = localStorage.getItem("authToken"); // Get token from localStorage
+    const token = localStorage.getItem("authToken");
 
     if (!token) {
       toast.error("User not authenticated");
       return;
     }
 
+    setLoading(true); // Start loading when the form is submitted
+
     try {
       const res = await fetch(url, {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}` // Attach token in Authorization header
+          'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify(formData),
       });
@@ -41,13 +117,15 @@ const Form = ({ onProblemAdded }) => {
 
       if (data.success) {
         toast.success("Problem added successfully");
-        setFormData({ title: '', url: '', time: '', topic: '', notes: '' });
-        onProblemAdded(); // Trigger re-fetch in Problems component
+        setFormData({ title: '', url: '', time: '', topic: '', notes: '', tags: [] });
+        onProblemAdded();
       } else {
         toast.error(data.message || "Failed to add problem");
       }
     } catch (error) {
       toast.error("Error adding problem");
+    } finally {
+      setLoading(false); // Stop loading after the submission is done
     }
   };
 
@@ -81,7 +159,7 @@ const Form = ({ onProblemAdded }) => {
           required
         >
           <option value="">Select Time (min)</option>
-          {[5, 10, 15, 30, 60].map((t) => (
+          {[5, 10, 15,20,25, 30,35,40,45,50,55, 60].map((t) => (
             <option key={t} value={t}>{t} min</option>
           ))}
         </select>
@@ -93,10 +171,21 @@ const Form = ({ onProblemAdded }) => {
           required
         >
           <option value="">Select DSA Topic</option>
-          {["Arrays", "Linked List", "Stacks", "Queues", "Trees", "Graphs", "Dynamic Programming", "Sorting", "Searching"].map((topic) => (
+          {topicOptions.map((topic) => (
             <option key={topic} value={topic}>{topic}</option>
           ))}
         </select>
+        <div>
+          <label className="block mb-1 font-semibold">Tags (optional)</label>
+          <Select
+            isMulti
+            options={tagOptions}
+            value={tagOptions.filter(opt => formData.tags.includes(opt.value))}
+            onChange={handleTagsChange}
+            styles={customSelectStyles}
+            className="text-black"
+          />
+        </div>
         <textarea
           name="notes"
           value={formData.notes}
@@ -104,8 +193,12 @@ const Form = ({ onProblemAdded }) => {
           className="w-full border rounded-lg p-2 bg-gray-700 text-white"
           placeholder="Notes"
         />
-        <button type="submit" className="w-full bg-blue-500 p-2 rounded-lg hover:bg-blue-600 transition">
-          Submit
+        <button 
+          type="submit" 
+          className="w-full bg-blue-500 p-2 rounded-lg hover:bg-blue-600 transition"
+          disabled={loading} // Disable button when loading
+        >
+          {loading ? <PulseLoader color="#fff" size={10} /> : "Submit"} {/* Show spinner if loading */}
         </button>
       </form>
     </div>
