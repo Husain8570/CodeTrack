@@ -1,0 +1,885 @@
+tags,topic,difficulty,estimated_time
+two pointer,Arrays,easy,15
+binary search,Searching,medium,25
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,45
+sliding window,Dynamic Programming,hard,50
+recursion,Backtracking,medium,30
+two pointer,Arrays,easy,20
+heap,Trees,medium,35
+union find,Graphs,hard,60
+prefix sum,Math,medium,25
+topological sort,Graphs,hard,55
+bfs traversal,Graphs,hard,50
+recursion,Trees,medium,30
+binary search,Searching,easy,20
+greedy,Arrays,medium,35
+dfs traversal,Trees,hard,40
+union find,Bit Manipulation,medium,45
+sliding window,Arrays,hard,40
+two pointer,Linked List,easy,15
+heap,Dynamic Programming,medium,35
+prefix sum,Sorting,medium,30
+binary search,Arrays,easy,15
+recursion,Backtracking,hard,50
+greedy,Math,easy,20
+dfs traversal,Graphs,hard,60
+union find,Graphs,hard,55
+topological sort,Graphs,hard,50
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,medium,40
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,55
+union find,Graphs,hard,60
+topological sort,Graphs,hard,50
+bfs traversal,Trees,medium,30
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,35
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,30
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Linked List,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,25
+binary search,Searching,easy,20
+recursion,Backtracking,medium,35
+greedy,Arrays,easy,15
+dfs traversal,Graphs,hard,50
+union find,Graphs,hard,60
+topological sort,Graphs,hard,55
+bfs traversal,Trees,medium,35
+sliding window,Dynamic Programming,hard,45
+two pointer,Arrays,easy,15
+heap,Trees,medium,30
+prefix sum,Math,medium,30
+"binary-search,two-pointer",Arrays,easy,15
+"greedy,heap,prefix-sum",Arrays,medium,25
+"dfs-traversal,bfs-traversal,recursion,backtracking",Graphs,hard,45
+"sliding-window,union-find",Dynamic Programming,hard,50
+"prefix-sum,topological-sort",Math,medium,30
+"binary-search,greedy,two-pointer",Arrays,easy,20
+"dfs-traversal,heap",Trees,medium,35
+"recursion,sliding-window",Backtracking,medium,40
+"bfs-traversal,union-find",Graphs,hard,55
+"two-pointer,prefix-sum",Linked List,easy,25
+"binary-search,topological-sort",Searching,hard,60
+"greedy,dfs-traversal",Graphs,hard,50
+"heap,recursion",Trees,medium,45
+"sliding-window,backtracking",Dynamic Programming,hard,55
+"union-find,prefix-sum",Graphs,medium,40
+"binary-search,two-pointer,heap",Arrays,medium,35
+"greedy,bfs-traversal",Arrays,hard,60
+"dfs-traversal,recursion",Graphs,hard,50
+"prefix-sum,sliding-window",Math,medium,30
+"two-pointer,topological-sort",Linked List,hard,55
+"binary-search,union-find",Searching,hard,60
+"greedy,heap,recursion",Arrays,medium,45
+"dfs-traversal,sliding-window",Graphs,hard,50
+"bfs-traversal,backtracking",Graphs,hard,55
+"two-pointer,prefix-sum,union-find",Linked List,medium,40
+"binary-search,greedy,topological-sort",Arrays,hard,60
+"heap,dfs-traversal",Trees,hard,50
+"recursion,prefix-sum",Backtracking,medium,35
+"sliding-window,two-pointer",Dynamic Programming,medium,45
+"union-find,bfs-traversal",Graphs,hard,55
+"binary-search,recursion,heap",Searching,medium,40
+"greedy,sliding-window",Arrays,hard,50
+"dfs-traversal,prefix-sum",Graphs,medium,35
+"two-pointer,backtracking",Linked List,medium,45
+"bfs-traversal,topological-sort",Graphs,hard,60
+"binary-search,union-find,recursion",Searching,hard,55
+"greedy,heap,dfs-traversal",Arrays,hard,50
+"prefix-sum,sliding-window,two-pointer",Math,medium,45
+"recursion,bfs-traversal",Trees,hard,55
+"binary-search,two-pointer,topological-sort",Arrays,hard,60
+"greedy,union-find",Arrays,hard,50
+"dfs-traversal,heap,recursion",Graphs,hard,55
+"sliding-window,prefix-sum",Dynamic Programming,medium,40
+"two-pointer,bfs-traversal",Linked List,medium,45
+"binary-search,greedy,backtracking",Arrays,hard,55
+"heap,topological-sort",Trees,hard,60
+"recursion,sliding-window,dfs-traversal",Backtracking,hard,50
+"union-find,prefix-sum,bfs-traversal",Graphs,hard,55
+"binary-search,two-pointer,recursion",Arrays,medium,45
+"greedy,dfs-traversal,heap",Arrays,hard,50
+"prefix-sum,topological-sort,union-find",Math,hard,60
+"sliding-window,backtracking,recursion",Dynamic Programming,hard,55
+"two-pointer,bfs-traversal,heap",Linked List,medium,45
+"binary-search,greedy,prefix-sum",Arrays,medium,40
+"dfs-traversal,union-find",Graphs,hard,55
+"recursion,topological-sort",Trees,hard,60
+"heap,sliding-window",Dynamic Programming,medium,45
+"two-pointer,dfs-traversal",Linked List,medium,50
+"binary-search,bfs-traversal",Searching,hard,55
+"greedy,recursion,union-find",Arrays,hard,50
+"prefix-sum,heap,backtracking",Math,hard,60
+"sliding-window,two-pointer,dfs-traversal",Dynamic Programming,hard,55
+"binary-search,topological-sort,recursion",Searching,hard,50
+"greedy,heap,bfs-traversal",Arrays,hard,55
+"dfs-traversal,prefix-sum,sliding-window",Graphs,hard,60
+"two-pointer,union-find,recursion",Linked List,medium,45
+"binary-search,greedy,dfs-traversal",Arrays,hard,50
+"heap,backtracking,topological-sort",Trees,hard,55
+"recursion,sliding-window,prefix-sum",Backtracking,hard,60
+"union-find,bfs-traversal,two-pointer",Graphs,hard,50
+"binary-search,heap,recursion",Searching,medium,45
+"greedy,topological-sort,sliding-window",Arrays,hard,55
+"dfs-traversal,two-pointer,prefix-sum",Graphs,hard,60
+"bfs-traversal,backtracking,union-find",Graphs,hard,50
+"binary-search,greedy,union-find",Arrays,hard,55
+"recursion,heap,dfs-traversal",Trees,hard,60
+"sliding-window,prefix-sum,two-pointer",Dynamic Programming,medium,45
+"binary-search,topological-sort,bfs-traversal",Searching,hard,50
+"greedy,dfs-traversal,recursion",Arrays,hard,55
+"heap,union-find,sliding-window",Trees,hard,60
+"two-pointer,backtracking,prefix-sum",Linked List,medium,45
+"binary-search,recursion,sliding-window",Searching,hard,50
+"greedy,bfs-traversal,heap",Arrays,hard,55
+"dfs-traversal,topological-sort,union-find",Graphs,hard,60
+"prefix-sum,two-pointer,recursion",Math,medium,45
+"binary-search,greedy,heap,dfs-traversal",Arrays,hard,50
+"sliding-window,bfs-traversal,backtracking",Dynamic Programming,hard,55
+"union-find,recursion,topological-sort",Graphs,hard,60
+"two-pointer,prefix-sum,heap",Linked List,medium,45
+"binary-search,dfs-traversal,bfs-traversal",Searching,hard,50
+"greedy,sliding-window,recursion",Arrays,hard,55
+"heap,topological-sort,prefix-sum",Trees,hard,60
+"recursion,union-find,two-pointer",Backtracking,medium,45
+"binary-search,greedy,backtracking,heap",Arrays,hard,50
+"dfs-traversal,sliding-window,prefix-sum",Graphs,hard,55
+"bfs-traversal,topological-sort,recursion",Graphs,hard,60
+"two-pointer,union-find,dfs-traversal",Linked List,medium,45
+"binary-search,prefix-sum,recursion",Searching,hard,50
+"greedy,heap,topological-sort",Arrays,hard,55
+"sliding-window,bfs-traversal,union-find",Dynamic Programming,hard,60
+"dfs-traversal,two-pointer,backtracking",Graphs,hard,50
+"binary-search,greedy,recursion,sliding-window",Arrays,hard,55
+"heap,prefix-sum,union-find",Trees,hard,60
+"topological-sort,bfs-traversal,dfs-traversal",Graphs,hard,50
+"two-pointer,recursion,heap",Linked List,medium,45
+"binary-search,union-find,backtracking",Searching,hard,50
+"greedy,dfs-traversal,prefix-sum",Arrays,hard,55
+"sliding-window,topological-sort,recursion",Dynamic Programming,hard,60
+"bfs-traversal,heap,two-pointer",Graphs,medium,45
+"binary-search,greedy,bfs-traversal,heap",Arrays,hard,50
+"dfs-traversal,recursion,union-find",Graphs,hard,55
+"prefix-sum,sliding-window,topological-sort",Math,hard,60
+"two-pointer,backtracking,dfs-traversal",Linked List,medium,45
+"binary-search,heap,sliding-window",Searching,hard,50
+"greedy,union-find,recursion",Arrays,hard,55
+"dfs-traversal,prefix-sum,bfs-traversal",Graphs,hard,60
+"topological-sort,two-pointer,heap",Graphs,hard,50
+"binary-search,recursion,backtracking",Searching,hard,55
+"greedy,sliding-window,dfs-traversal",Arrays,hard,60
+"heap,union-find,prefix-sum",Trees,hard,50
+"two-pointer,bfs-traversal,topological-sort",Linked List,hard,55
+"binary-search,greedy,prefix-sum,union-find",Arrays,hard,50
+"dfs-traversal,recursion,sliding-window",Graphs,hard,55
+"bfs-traversal,heap,backtracking",Graphs,hard,60
+"two-pointer,topological-sort,prefix-sum",Linked List,medium,45
+"binary-search,union-find,dfs-traversal",Searching,hard,50
+"greedy,heap,bfs-traversal",Arrays,hard,55
+"recursion,sliding-window,topological-sort",Backtracking,hard,60
+"prefix-sum,two-pointer,backtracking",Math,medium,45
+"binary-search,greedy,recursion,heap",Arrays,hard,50
+"dfs-traversal,union-find,sliding-window",Graphs,hard,55
+"bfs-traversal,prefix-sum,topological-sort",Graphs,hard,60
+"two-pointer,recursion,dfs-traversal",Linked List,medium,45
+"binary-search,sliding-window,topological-sort",Searching,hard,50
+"greedy,prefix-sum,bfs-traversal",Arrays,hard,55
+"heap,dfs-traversal,union-find",Trees,hard,60
+"recursion,two-pointer,backtracking",Backtracking,medium,45
+"binary-search,greedy,dfs-traversal,bfs-traversal",Arrays,hard,50
+"sliding-window,heap,prefix-sum",Dynamic Programming,hard,55
+"union-find,topological-sort,recursion",Graphs,hard,60
+"two-pointer,backtracking,heap",Linked List,medium,45
+"binary-search,prefix-sum,dfs-traversal",Searching,hard,50
+"greedy,recursion,topological-sort",Arrays,hard,55
+"bfs-traversal,sliding-window,union-find",Graphs,hard,60
+"heap,two-pointer,dfs-traversal",Trees,medium,45
+"binary-search,greedy,union-find,recursion",Arrays,hard,50
+"dfs-traversal,prefix-sum,backtracking",Graphs,hard,55
+"sliding-window,topological-sort,bfs-traversal",Dynamic Programming,hard,60
+"two-pointer,heap,recursion",Linked List,medium,45
+"binary-search,bfs-traversal,sliding-window",Searching,hard,50
+"greedy,dfs-traversal,heap,prefix-sum",Arrays,hard,55
+"union-find,recursion,backtracking",Graphs,hard,60
+"topological-sort,two-pointer,sliding-window",Graphs,hard,50
+"binary-search,greedy,backtracking,recursion",Arrays,hard,55
+"dfs-traversal,heap,bfs-traversal",Graphs,hard,60
+"prefix-sum,union-find,sliding-window",Math,hard,50
+"two-pointer,topological-sort,dfs-traversal",Linked List,hard,55
+"binary-search,recursion,union-find",Searching,hard,60
+"greedy,sliding-window,heap",Arrays,hard,50
+"bfs-traversal,prefix-sum,recursion",Graphs,hard,55
+"dfs-traversal,two-pointer,backtracking",Graphs,hard,60
+"heap,topological-sort,sliding-window",Trees,hard,50
+"binary-search,greedy,prefix-sum,bfs-traversal",Arrays,hard,55
+"union-find,dfs-traversal,recursion",Graphs,hard,60
+"two-pointer,sliding-window,backtracking",Linked List,medium,45
+"binary-search,heap,dfs-traversal,bfs-traversal",Searching,hard,50
+"greedy,recursion,prefix-sum",Arrays,hard,55
+"topological-sort,union-find,sliding-window",Graphs,hard,60
+"dfs-traversal,two-pointer,heap",Graphs,medium,45
+"binary-search,sliding-window,union-find",Searching,hard,50
+"greedy,bfs-traversal,topological-sort",Arrays,hard,55
+"recursion,heap,prefix-sum",Trees,hard,60
+"two-pointer,dfs-traversal,backtracking",Linked List,medium,45
+"binary-search,greedy,recursion,dfs-traversal",Arrays,hard,50
+"heap,sliding-window,bfs-traversal",Trees,hard,55
+"prefix-sum,topological-sort,union-find",Math,hard,60
+"union-find,two-pointer,recursion",Graphs,medium,45
+"binary-search,backtracking,topological-sort",Searching,hard,50
+"greedy,dfs-traversal,sliding-window",Arrays,hard,55
+"bfs-traversal,heap,recursion",Graphs,hard,60
+"two-pointer,prefix-sum,dfs-traversal",Linked List,medium,45
+"binary-search,union-find,heap",Searching,hard,50
+"greedy,recursion,bfs-traversal",Arrays,hard,55
+"dfs-traversal,topological-sort,prefix-sum",Graphs,hard,60
+"sliding-window,two-pointer,backtracking",Dynamic Programming,hard,50
+"binary-search,greedy,heap,topological-sort",Arrays,hard,55
+"recursion,dfs-traversal,union-find",Trees,hard,60
+"prefix-sum,bfs-traversal,sliding-window",Math,hard,50
+"two-pointer,heap,dfs-traversal",Linked List,medium,45
+"binary-search,sliding-window,recursion,backtracking",Searching,hard,50
+"greedy,union-find,topological-sort",Arrays,hard,55
+"dfs-traversal,prefix-sum,heap",Graphs,hard,60
+"bfs-traversal,two-pointer,recursion",Graphs,medium,45
+"binary-search,greedy,prefix-sum,recursion",Arrays,hard,50
+"heap,sliding-window,topological-sort",Trees,hard,55
+"union-find,dfs-traversal,backtracking",Graphs,hard,60
+"two-pointer,bfs-traversal,prefix-sum",Linked List,medium,45
+"binary-search,recursion,topological-sort",Searching,hard,50
+"greedy,heap,dfs-traversal,bfs-traversal",Arrays,hard,55
+"sliding-window,union-find,prefix-sum",Dynamic Programming,hard,60
+"dfs-traversal,two-pointer,recursion",Graphs,medium,45
+"binary-search,greedy,backtracking,union-find",Arrays,hard,50
+"heap,prefix-sum,bfs-traversal",Trees,hard,55
+"topological-sort,sliding-window,recursion",Graphs,hard,60
+"two-pointer,dfs-traversal,heap",Linked List,medium,45
+"binary-search,union-find,sliding-window",Searching,hard,50
+"greedy,recursion,topological-sort,bfs-traversal",Arrays,hard,55
+"dfs-traversal,heap,prefix-sum",Graphs,hard,60
+"bfs-traversal,backtracking,sliding-window",Graphs,hard,50
+"two-pointer,greedy,heap",Linked List,medium,45
+"binary-search,prefix-sum,topological-sort",Searching,hard,50
+"recursion,dfs-traversal,sliding-window",Trees,hard,55
+"union-find,bfs-traversal,heap",Graphs,hard,60
+"greedy,two-pointer,backtracking",Arrays,medium,45
+"binary-search,heap,union-find",Searching,hard,50
+"dfs-traversal,recursion,prefix-sum",Graphs,hard,55
+"sliding-window,topological-sort,bfs-traversal",Dynamic Programming,hard,60
+"two-pointer,greedy,recursion",Linked List,medium,45
+"binary-search,bfs-traversal,union-find",Searching,hard,50
+"greedy,heap,sliding-window",Arrays,hard,55
+"dfs-traversal,topological-sort,backtracking",Graphs,hard,60
+"prefix-sum,recursion,two-pointer",Math,medium,45
+"binary-search,greedy,dfs-traversal,union-find",Arrays,hard,50
+"heap,bfs-traversal,sliding-window",Trees,hard,55
+"recursion,topological-sort,prefix-sum",Backtracking,hard,60
+"two-pointer,dfs-traversal,prefix-sum",Linked List,medium,45
+"binary-search,sliding-window,greedy",Searching,hard,50
+"union-find,recursion,heap",Graphs,hard,55
+"dfs-traversal,bfs-traversal,backtracking",Graphs,hard,60
+"topological-sort,two-pointer,prefix-sum",Graphs,medium,45
+"binary-search,greedy,recursion,heap,dfs-traversal",Arrays,hard,50
+"sliding-window,union-find,bfs-traversal",Dynamic Programming,hard,55
+"prefix-sum,backtracking,topological-sort",Math,hard,60
+"two-pointer,heap,recursion,dfs-traversal",Linked List,medium,45
+"binary-search,greedy,bfs-traversal,sliding-window",Arrays,hard,50
+"union-find,topological-sort,recursion",Graphs,hard,55
+"heap,prefix-sum,dfs-traversal",Trees,hard,60
+"two-pointer,backtracking,greedy",Linked List,medium,45
+"binary-search,dfs-traversal,sliding-window",Searching,hard,50
+"recursion,union-find,bfs-traversal",Trees,hard,55
+"greedy,heap,topological-sort,prefix-sum",Arrays,hard,60
+"bfs-traversal,two-pointer,dfs-traversal",Graphs,medium,45
+"binary-search,union-find,topological-sort",Searching,hard,50
+"greedy,recursion,sliding-window,backtracking",Arrays,hard,55
+"dfs-traversal,heap,prefix-sum",Graphs,hard,60
+"two-pointer,bfs-traversal,union-find",Linked List,medium,45
+"binary-search,sliding-window,topological-sort,recursion",Searching,hard,50
+"greedy,dfs-traversal,bfs-traversal,heap",Arrays,hard,55
+"prefix-sum,union-find,backtracking",Math,hard,60
+"recursion,two-pointer,dfs-traversal",Backtracking,medium,45
+"binary-search,greedy,heap,union-find",Arrays,hard,50
+"sliding-window,topological-sort,dfs-traversal",Dynamic Programming,hard,55
+"bfs-traversal,prefix-sum,recursion",Graphs,hard,60
+"two-pointer,heap,greedy,dfs-traversal",Linked List,medium,45
+"binary-search,recursion,backtracking,union-find",Searching,hard,50
+"greedy,sliding-window,prefix-sum,topological-sort",Arrays,hard,55
+"dfs-traversal,bfs-traversal,heap",Graphs,hard,60
+"union-find,two-pointer,backtracking",Graphs,medium,45
+"binary-search,greedy,dfs-traversal,recursion,sliding-window",Arrays,hard,50
+"heap,topological-sort,bfs-traversal",Trees,hard,55
+"prefix-sum,recursion,union-find",Math,hard,60
+"two-pointer,greedy,heap,dfs-traversal",Linked List,medium,45
+"binary-search,sliding-window,bfs-traversal,union-find",Searching,hard,50
+"greedy,recursion,topological-sort,prefix-sum",Arrays,hard,55
+"dfs-traversal,heap,backtracking",Graphs,hard,60
+"two-pointer,prefix-sum,sliding-window",Linked List,medium,45
+"binary-search,union-find,recursion,topological-sort",Searching,hard,50
+"greedy,bfs-traversal,dfs-traversal,heap",Arrays,hard,55
+"sliding-window,backtracking,prefix-sum",Dynamic Programming,hard,60
+"recursion,two-pointer,heap",Backtracking,medium,45
+"binary-search,greedy,prefix-sum,union-find,topological-sort",Arrays,hard,50
+"dfs-traversal,sliding-window,bfs-traversal",Graphs,hard,55
+"heap,recursion,backtracking",Trees,hard,60
+"two-pointer,greedy,dfs-traversal,union-find",Linked List,medium,45
+"binary-search,topological-sort,sliding-window,recursion",Searching,hard,50
+"greedy,heap,bfs-traversal,prefix-sum",Arrays,hard,55
+"union-find,dfs-traversal,backtracking",Graphs,hard,60
+"two-pointer,recursion,sliding-window",Linked List,medium,45
+"binary-search,greedy,dfs-traversal,heap,bfs-traversal",Arrays,hard,50
+"prefix-sum,topological-sort,union-find,recursion",Math,hard,55
+"sliding-window,two-pointer,backtracking",Dynamic Programming,hard,60
+"binary-search,union-find,heap,recursion",Searching,hard,50
+"greedy,dfs-traversal,sliding-window,prefix-sum",Arrays,hard,55
+"bfs-traversal,topological-sort,backtracking",Graphs,hard,60
+"two-pointer,heap,greedy,recursion",Linked List,medium,45
+"binary-search,sliding-window,dfs-traversal,union-find",Searching,hard,50
+"greedy,prefix-sum,bfs-traversal,topological-sort",Arrays,hard,55
+"recursion,heap,backtracking,dfs-traversal",Trees,hard,60
+"two-pointer,union-find,sliding-window,prefix-sum",Linked List,medium,45
+"binary-search,greedy,topological-sort,recursion,bfs-traversal",Arrays,hard,50
+"dfs-traversal,heap,sliding-window,prefix-sum",Graphs,hard,55
+"union-find,backtracking,topological-sort",Graphs,hard,60
+"two-pointer,greedy,heap,dfs-traversal,recursion",Linked List,medium,45
+"binary-search,sliding-window,bfs-traversal,topological-sort",Searching,hard,50
+"greedy,union-find,prefix-sum,recursion",Arrays,hard,55
+"dfs-traversal,heap,backtracking,bfs-traversal",Graphs,hard,60
+"two-pointer,prefix-sum,sliding-window,union-find",Linked List,medium,45
+"binary-search,greedy,recursion,heap,topological-sort",Arrays,hard,50
+"dfs-traversal,bfs-traversal,sliding-window,prefix-sum",Graphs,hard,55
+"union-find,backtracking,recursion,topological-sort",Graphs,hard,60
+"two-pointer,greedy,heap,dfs-traversal,bfs-traversal",Linked List,medium,45
+"binary-search,sliding-window,recursion,union-find,topological-sort",Searching,hard,50
+"greedy,prefix-sum,dfs-traversal,bfs-traversal,heap",Arrays,hard,55
+"recursion,backtracking,topological-sort,union-find",Trees,hard,60
+"two-pointer,sliding-window,greedy,heap,prefix-sum",Linked List,medium,45
+"binary-search,dfs-traversal,union-find,recursion,topological-sort",Searching,hard,50
+"greedy,bfs-traversal,sliding-window,heap,prefix-sum",Arrays,hard,55
+"recursion,dfs-traversal,backtracking,topological-sort,union-find",Trees,hard,60
+"two-pointer,greedy,heap,prefix-sum,sliding-window",Linked List,medium,45
+"binary-search,topological-sort,bfs-traversal,union-find,recursion",Searching,hard,50
+"greedy,dfs-traversal,sliding-window,heap,prefix-sum",Arrays,hard,55
+"recursion,backtracking,union-find,topological-sort,bfs-traversal",Trees,hard,60
+"two-pointer,greedy,heap,dfs-traversal,sliding-window",Linked List,medium,45
+"binary-search,prefix-sum,recursion,union-find,topological-sort",Searching,hard,50
+"greedy,bfs-traversal,dfs-traversal,heap,sliding-window",Arrays,hard,55
+"recursion,backtracking,topological-sort,prefix-sum,union-find",Trees,hard,60
+"two-pointer,greedy,heap,dfs-traversal,bfs-traversal,recursion",Linked List,medium,45
+"binary-search,sliding-window,prefix-sum,union-find,topological-sort",Searching,hard,50
+"greedy,dfs-traversal,bfs-traversal,heap,recursion,backtracking",Arrays,hard,55
+"union-find,topological-sort,prefix-sum,sliding-window,recursion",Graphs,hard,60
+"two-pointer,greedy,heap,dfs-traversal,bfs-traversal,sliding-window",Linked List,medium,45
+"binary-search,recursion,backtracking,union-find,topological-sort,prefix-sum",Searching,hard,50
+"greedy,dfs-traversal,bfs-traversal,heap,sliding-window,recursion",Arrays,hard,55
+"union-find,topological-sort,prefix-sum,backtracking,recursion,heap",Graphs,hard,60
