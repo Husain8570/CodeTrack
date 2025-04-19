@@ -23,17 +23,17 @@ const topicOptions = [
 ];
 
 const tagOptions = [
-  { value: 'binary-search', label: 'Binary Search' },
+  { value: 'binary search', label: 'Binary Search' },
   { value: 'greedy', label: 'Greedy' },
-  { value: 'dfs-traversal', label: 'DFS Traversal' },
-  { value: 'bfs-traversal', label: 'BFS Traversal' },
+  { value: 'dfs traversal', label: 'DFS Traversal' },
+  { value: 'bfs traversal', label: 'BFS Traversal' },
   { value: 'recursion', label: 'Recursion' },
-  { value: 'sliding-window', label: 'Sliding Window' },
-  { value: 'two-pointer', label: 'Two Pointer' },
+  { value: 'sliding window', label: 'Sliding Window' },
+  { value: 'two pointer', label: 'Two Pointer' },
   { value: 'heap', label: 'Heap / Priority Queue' },
-  { value: 'prefix-sum', label: 'Prefix Sum' },
-  { value: 'union-find', label: 'Union Find / DSU' },
-  { value: 'topological-sort', label: 'Topological Sort' }
+  { value: 'prefix sum', label: 'Prefix Sum' },
+  { value: 'union find', label: 'Union Find / DSU' },
+  { value: 'topological sort', label: 'Topological Sort' }
 ];
 
 
