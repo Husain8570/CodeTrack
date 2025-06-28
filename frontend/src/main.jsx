@@ -4,10 +4,14 @@ import './index.css'
 import App from './App'
 import {BrowserRouter} from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
+import { ProblemProvider } from './ProblemContext'
 createRoot(document.getElementById('root')).render(
   
    <BrowserRouter>
-     <App />
+     <ProblemProvider>
+
+      <App />
+     </ProblemProvider>
      <ToastContainer theme="dark"/>
    </BrowserRouter>
   
