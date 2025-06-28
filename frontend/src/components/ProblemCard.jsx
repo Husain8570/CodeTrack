@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { MdDeleteOutline } from "react-icons/md";
 import { CgNotes } from "react-icons/cg";
+import { useProblemContext } from '../ProblemContext';
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
-const ProblemCard = ({ title, url, time, topic, notes, id, setRefresh, refresh, expectedTime, difficulty }) => {
+const ProblemCard = ({ title, url, time, topic, notes, id, expectedTime, difficulty }) => {
   const [showNotes, setShowNotes] = useState(false);
+  const { problems, setProblems } = useProblemContext();
 
   async function deleteHandler() {
     const deleteUrl = `${SERVER_URL}/api/problems/delete/${id}`;
@@ -21,7 +23,8 @@ const ProblemCard = ({ title, url, time, topic, notes, id, setRefresh, refresh, 
 
       const data = await res.json();
       if (data.success) {
-        setRefresh(!refresh);
+        // Remove the deleted problem from the global context
+        setProblems(problems.filter(problem => problem._id !== id));
       } else {
         console.error("Failed to delete problem:", data.message);
       }
@@ -33,30 +36,29 @@ const ProblemCard = ({ title, url, time, topic, notes, id, setRefresh, refresh, 
   return (
     <div className="bg-gray-700 text-white p-4 w-full rounded-lg shadow-md transition-transform transform hover:shadow-lg">
       <h3 className="text-2xl uppercase font-semibold text-center">{title}</h3>
+      
       <div className="space-y-1 mt-2 text-xl">
-  <div className="flex justify-between">
-    <span className="font-medium">Topic:</span>
-    <span>{topic}</span>
-  </div>
-  <div className="flex justify-between">
-    <span className="font-medium">Time Taken:</span>
-    <span>{time} min</span>
-  </div>
-  {difficulty && (
-    <div className="flex justify-between">
-      <span className="font-medium">Estimated Difficulty:</span>
-      <span className="capitalize">{difficulty}</span>
-    </div>
-  )}
-  {expectedTime && (
-    <div className="flex justify-between">
-      <span className="font-medium">Expected solve time:</span>
-      <span>{expectedTime} min</span>
-    </div>
-  )}
-</div>
-
-
+        <div className="flex justify-between">
+          <span className="font-medium">Topic:</span>
+          <span>{topic}</span>
+        </div>
+        <div className="flex justify-between">
+          <span className="font-medium">Time Taken:</span>
+          <span>{time} min</span>
+        </div>
+        {difficulty && (
+          <div className="flex justify-between">
+            <span className="font-medium">Estimated Difficulty:</span>
+            <span className="capitalize">{difficulty}</span>
+          </div>
+        )}
+        {expectedTime && (
+          <div className="flex justify-between">
+            <span className="font-medium">Expected solve time:</span>
+            <span>{expectedTime} min</span>
+          </div>
+        )}
+      </div>
 
       <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-2 block font-medium">
         Solve Problem →
