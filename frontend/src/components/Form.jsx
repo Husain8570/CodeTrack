@@ -1,25 +1,15 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import { ToastContainer, toast } from 'react-toastify';
-import { PulseLoader } from 'react-spinners'; // Import the spinner
+import { PulseLoader } from 'react-spinners';
+import { useProblemContext } from '../ProblemContext';
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
 const topicOptions = [
-  "Arrays",
-  "Linked List",
-  "Stacks",
-  "Queues",
-  "Trees",
-  "Graphs",             // Keep here only
-  "Dynamic Programming", // Keep here only
-  "Sorting",
-  "Searching",
-  "Bit Manipulation",
-  "Math",
-  "Backtracking",
-  "Trie",
-  "Segment Tree"
+  "Arrays", "Linked List", "Stacks", "Queues", "Trees", "Graphs",
+  "Dynamic Programming", "Sorting", "Searching", "Bit Manipulation",
+  "Math", "Backtracking", "Trie", "Segment Tree"
 ];
 
 const tagOptions = [
@@ -36,22 +26,21 @@ const tagOptions = [
   { value: 'topological sort', label: 'Topological Sort' }
 ];
 
-
 const customSelectStyles = {
   control: (base) => ({
     ...base,
-    backgroundColor: '#374151', // Tailwind's gray-700
-    borderColor: '#4B5563', // gray-600
+    backgroundColor: '#374151',
+    borderColor: '#4B5563',
     color: 'white',
   }),
   menu: (base) => ({
     ...base,
-    backgroundColor: '#1F2937', // gray-800
+    backgroundColor: '#1F2937',
     color: 'white',
   }),
   multiValue: (base) => ({
     ...base,
-    backgroundColor: '#3B82F6', // blue-500
+    backgroundColor: '#3B82F6',
     color: 'white',
   }),
   multiValueLabel: (base) => ({
@@ -69,7 +58,9 @@ const customSelectStyles = {
   }),
 };
 
-const Form = ({ onProblemAdded }) => {
+const Form = () => {
+  const { setProblems } = useProblemContext();
+
   const [formData, setFormData] = useState({
     title: '',
     url: '',
@@ -79,7 +70,7 @@ const Form = ({ onProblemAdded }) => {
     tags: [],
   });
 
-  const [loading, setLoading] = useState(false); // State to track loading
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -101,7 +92,7 @@ const Form = ({ onProblemAdded }) => {
       return;
     }
 
-    setLoading(true); // Start loading when the form is submitted
+    setLoading(true);
 
     try {
       const res = await fetch(url, {
@@ -117,15 +108,18 @@ const Form = ({ onProblemAdded }) => {
 
       if (data.success) {
         toast.success("Problem added successfully");
+
+        // Update context with new problem
+        setProblems((prev) => [...prev, data.problem]);
+
         setFormData({ title: '', url: '', time: '', topic: '', notes: '', tags: [] });
-        onProblemAdded();
       } else {
         toast.error(data.message || "Failed to add problem");
       }
     } catch (error) {
       toast.error("Error adding problem");
     } finally {
-      setLoading(false); // Stop loading after the submission is done
+      setLoading(false);
     }
   };
 
@@ -159,7 +153,7 @@ const Form = ({ onProblemAdded }) => {
           required
         >
           <option value="">Select Time (min)</option>
-          {[5, 10, 15,20,25, 30,35,40,45,50,55, 60].map((t) => (
+          {[5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60].map((t) => (
             <option key={t} value={t}>{t} min</option>
           ))}
         </select>
@@ -196,9 +190,9 @@ const Form = ({ onProblemAdded }) => {
         <button 
           type="submit" 
           className="w-full bg-blue-500 p-2 rounded-lg hover:bg-blue-600 transition"
-          disabled={loading} // Disable button when loading
+          disabled={loading}
         >
-          {loading ? <PulseLoader color="#fff" size={10} /> : "Submit"} {/* Show spinner if loading */}
+          {loading ? <PulseLoader color="#fff" size={10} /> : "Submit"}
         </button>
       </form>
     </div>
