@@ -1,56 +1,56 @@
 import React, { useEffect, useState } from 'react';
 import ProblemCard from './ProblemCard';
 import SearchBar from './SearchBar';
-
+import { useProblemContext } from '../ProblemContext'
 const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 
-function Problems({ refresh, setRefresh }) {
-  const [problems, setProblems] = useState([]);
-  const [allProblems, setAllProblems] = useState([]); // Store all problems
+function Problems() {
+  const { problems, setProblems } = useProblemContext();
+  const [allProblems, setAllProblems] = useState([]); // Store all problems for local search
 
   function searchHandler(title) {
     if (title.trim() === '') {
-      setProblems(allProblems); // Reset to original list
+      setProblems(allProblems);
     } else {
-      const filteredProblems = allProblems.filter((problem) =>
-        problem.title.toLowerCase().includes(title.toLowerCase()) // Case-insensitive search
+      const filtered = allProblems.filter((p) =>
+        p.title.toLowerCase().includes(title.toLowerCase())
       );
-      setProblems(filteredProblems);
+      setProblems(filtered);
     }
   }
 
   useEffect(() => {
     async function fetchProblems() {
-      const token = localStorage.getItem("authToken"); // Get token from localStorage
+      const token = localStorage.getItem("authToken");
       if (!token) {
         console.error("No authentication token found.");
         return;
       }
 
       try {
-        const response = await fetch(`${SERVER_URL}/api/problems`, {
+        const res = await fetch(`${SERVER_URL}/api/problems`, {
           headers: {
-            'Authorization': `Bearer ${token}`, // Attach token in Authorization header
+            'Authorization': `Bearer ${token}`,
           },
         });
 
-        const data = await response.json();
+        const data = await res.json();
         setProblems(data.problems || []);
-        setAllProblems(data.problems || []); // Store original problems
-      } catch (error) {
-        console.error('Error fetching problems:', error);
+        setAllProblems(data.problems || []);
+      } catch (err) {
+        console.error('Error fetching problems:', err);
       }
     }
 
     fetchProblems();
-  }, [refresh]); // Re-fetch when refresh state changes
+  }, []);
 
   return (
     <div className="text-white flex flex-col gap-4 p-4 w-full md:w-1/2 items-center max-h-[80vh] overflow-y-auto bg-gray-800 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Problems</h2>
       <SearchBar onSearch={searchHandler} />
       {problems.length > 0 ? (
-        problems.map((problem, index) => (
+        problems.map((problem) => (
           <ProblemCard 
             key={problem._id} 
             title={problem.title} 
@@ -60,10 +60,6 @@ function Problems({ refresh, setRefresh }) {
             id={problem._id}
             expectedTime={problem.estimatedTime}
             difficulty={problem.predictedDifficulty}
-
-
-            setRefresh={setRefresh}
-            refresh={refresh}
           />
         ))
       ) : (
