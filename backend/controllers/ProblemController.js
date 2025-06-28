@@ -21,8 +21,7 @@ const addproblem = async (req, res) => {
         const pythonScriptPath = path.resolve(__dirname, '../ml/predictor.py');
         
         // Call Python script to get ML predictions
-        const pyProcess = spawn('python3', [pythonScriptPath, title, topic, ...tags]);
-
+        const pyProcess = spawn('C:/Users/DELL/AppData/Local/Programs/Python/Python310/python.exe', [pythonScriptPath, title, topic, ...tags]);
 
         let dataBuffer = '';
 
@@ -80,7 +79,9 @@ const addproblem = async (req, res) => {
 
             res.json({
                 success: true,
-                msg: "Problem added successfully with ML predictions"
+                msg: "Problem added successfully with ML predictions",
+                problem
+
             });
         });
 
